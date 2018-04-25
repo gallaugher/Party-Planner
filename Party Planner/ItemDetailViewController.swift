@@ -18,9 +18,8 @@ class ItemDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if partyItem == nil{
-            partyItem.name = ""
-            partyItem.personResponsible = ""
+        if partyItem == nil {
+            partyItem = PartyItemStruct(name: "", personResponsible: "")
         }
 
         personResponsibleField.text = partyItem.personResponsible
